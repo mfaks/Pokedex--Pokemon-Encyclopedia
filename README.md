@@ -122,12 +122,12 @@ You must implement the following functions in your program. You are not allowed 
 The dex.txt file will have the following pattern:
 
 {total number of Pokemon in file}  
-{dex number of first Pokemon}, {name}, {type}, {number of moves}  
-{name of move 1}, {name of move 2}, {…}    
+{dex number of first Pokemon} {name} {type} {number of moves}  
+{name of move 1} {name of move 2} {…}    
 {dex number of second Pokemon}, {name}, {type}, {number of moves}  
-{name of move 1}, {name of move 2}, {…}    
-{dex number of third Pokemon}, {name}, {type}, {number of moves}  
-{name of move 1}, {name of move 2}, {…}    
+{name of move 1} {name of move 2} {…}    
+{dex number of third Pokemon} {name} {type} {number of moves}  
+{name of move 1} {name of move 2} {…}    
 
 **REQUIRED FILES:**
 
