@@ -14,9 +14,9 @@ all of the information that your program will display.
 
 • Practice good software engineering design principles:
 
-o Design your solution before writing the program
+ o Design your solution before writing the program
 
-o Develop test cases before writing the program
+ o Develop test cases before writing the program
 
 • Review pointers, arrays, and structs
 
@@ -82,19 +82,44 @@ read in (or derived) from the files. You cannot modify, add, or take away any pa
 
 1. The Pokedex struct will be used to hold information from the dex.txt file. This struct holds information about the Pokedex.  
  
- struct Pokedex {    
-    string trainer;  
-    int num_pokemon;  
-    Pokemon* dex;  
-  };
+   struct Pokedex {    
+        string trainer;  
+        int num_pokemon;  
+        Pokemon* dex;  
+    };
 
 2. The Pokemon struct will also be used to read in information from the dex.txt file. This struct holds information about a Pokemon.
  
- struct Pokemon {  
-     int dex_num;  
-     string name;  
-     string type;  
-     int num_moves;  
-     string* moves;  
-  };
+   struct Pokemon {  
+         int dex_num;  
+         string name;  
+         string type;  
+         int num_moves;  
+         string* moves;  
+    };
+
+**REQUIRED FUNCTIONS:**
+
+You must implement the following functions in your program. You are not allowed to modify these required function declarations in any way. Note: it is acceptable if you choose to add additional functions (but you must still include the required functions).
+
+1. This function will dynamically allocate an array of Pokemons (of the requested size):
+
+Pokemon* create_pokemons(int);
+
+2. This function will fill a Pokedex object with information that is read in from dex.txt. Hint: “ifstream
+&” is a reference to a filestream object. You will need to create one and pass it into this function to read from the dex.txt file.
+
+void populate_pokedex_data(Pokedex & , ifstream &);
+
+3. This function will dynamically allocate an array of moves of a Pokemon (of the requested size):
+
+string* create_moves(int);
+
+4. This function will fill a single Pokemon object with information that is read in from dex.txt.
+
+void populate_pokemon(Pokemon &, ifstream &);
+
+5. You need to implement a function that will delete all the memory that was dynamically allocated.
+
+void delete_info(Pokedex &);
 
