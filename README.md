@@ -99,35 +99,35 @@ You must implement the following functions in your program. You are not allowed 
 
 1. This function will dynamically allocate an array of Pokemons (of the requested size):
 
-Pokemon* create_pokemons(int);
+&nbsp;&nbsp;&nbsp;&nbsp; Pokemon* create_pokemons(int);
 
 2. This function will fill a Pokedex object with information that is read in from dex.txt. Hint: “ifstream &” is a reference to a filestream object. You will need to create one and pass it into this function to read from the dex.txt file.
 
-void populate_pokedex_data(Pokedex & , ifstream &);
+&nbsp;&nbsp;&nbsp;&nbsp; void populate_pokedex_data(Pokedex & , ifstream &);
 
 3. This function will dynamically allocate an array of moves of a Pokemon (of the requested size):
 
-string* create_moves(int);
+&nbsp;&nbsp;&nbsp;&nbsp; string* create_moves(int);
 
 4. This function will fill a single Pokemon object with information that is read in from dex.txt.
 
-void populate_pokemon(Pokemon &, ifstream &);
+&nbsp;&nbsp;&nbsp;&nbsp; void populate_pokemon(Pokemon &, ifstream &);
 
 5. You need to implement a function that will delete all the memory that was dynamically allocated.
 
-void delete_info(Pokedex &);
+&nbsp;&nbsp;&nbsp;&nbsp; void delete_info(Pokedex &);
 
 **REQUIRED INPUT FILE FORMAT:**
 
 The dex.txt file will have the following pattern:
 
-<total number of Pokemon in file>  
-<dex number of first Pokemon> <name> <type> <number of moves>
-<name of move 1> <name of move 2> …  
-<dex number of second Pokemon> <name> <type> <number of moves>  
-<name of move 1> <name of move 2> …  
-<dex number of third Pokemon> <name> <type> <number of moves>  
-<name of move 1> <name of move 2> …  
+{total number of Pokemon in file}  
+{dex number of first Pokemon}, {name}, {type}, {number of moves}  
+{name of move 1}, {name of move 2}, {…}    
+{dex number of second Pokemon}, {name}, {type}, {number of moves}  
+{name of move 1}, {name of move 2}, {…}    
+{dex number of third Pokemon}, {name}, {type}, {number of moves}  
+{name of move 1}, {name of move 2}, {…}    
 
 **REQUIRED FILES:**
 
