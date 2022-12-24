@@ -62,8 +62,10 @@ If the file name does not exist, a file should be created and the information sh
 
 • Add new Pokemon:
 
-    If the user picks this option, the program must prompt the user to enter each of the fields for a new
-    Pokemon. The size of the Pokedex will need to dynamically increase to store the new data.
+    If the user picks this option, the program must prompt the user to enter each of the fields for a new Pokemon. 
+    The size of the Pokedex will need to dynamically increase to store the new data. 
+    You can assume the user will not add a repeated pokemon or dex number. 
+    You can also assume you will not need to sort the .txt file to display the pokemon in ascending dex number order. 
     *Hint: Think of rewriting the whole file instead of appending the new Pokemon to the end.
 
 • Quit: The program will exit.
